@@ -12,6 +12,7 @@ body {
     font-size: 3rem;
     text-align: end;
     margin: 1rem 2rem;
+    color: var(---color1);
 }
 
 .teclado {
@@ -50,7 +51,17 @@ body {
 }
 .tecla-funciones-especiales:hover{
     background-color: rgb(100, 98, 98);
+    cursor: pointer;
 }
+
+.teclado > .tecla-AC {
+    background-color: var(---color2);
+}
+.tecla-AC:hover{
+    background-color: rgb(100, 98, 98);
+    cursor: pointer;
+}
+
 
 .teclado > .teclasim {
     background-color: var(---color4);
