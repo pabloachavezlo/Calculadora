@@ -1,19 +1,113 @@
-* { 
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    color: var(---color3);
+#root {
+    max-width: 36.5rem;
+    margin: auto;
+    background-color: var(---color);
+    border-radius: 10px;
+    
+}
+.titulo{
+    width: 100%;
+    padding: 0.1rem 1rem;
+    background-color: #16171D;
+    color: var(---color5);
+    font-size: 1.5rem;
+    
+    display: flex;
+    align-items: center;
 }
 
-:root {
-    ---color1:  black;
-    ---color2:  gray;
-    ---color3: white;
-    ---color4: orange;
-    ---color5: rgb(25, 21, 21);
+.titulo span {
+    font-weight: 600;
 }
 
-html {
-    background-color: white;
-    font-family: 'Quicksand', sans-serif;
+.recorrido {
+    list-style: none;
+    width: 100%;
+    height: 11.5rem;
+    background-color: var(---color2);
+    padding: 1rem;
+    color: var(---color5);
+
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-end;
+    overflow-y: scroll;
+}
+
+.recorrido li {
+    width: 100%;
+    font-size: 2rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+.equal-sign {
+    color: var(---color4);
+    justify-self: right;
+
+}
+.resultado {
+    font-weight: 500;
+    justify-self: right;
+}
+#resultado-pantalla {
+    display: flex;
+    width: 100%;
+    height: 6.5rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    padding: 1rem;
+
+    background-color: var(---color1);
+    color: var(---color5);
+}
+.teclado {
+    display: grid;
+    grid-template-columns: repeat(5,6.5rem);
+    grid-template-rows: repeat(5,4.5rem);
+    gap: 0.4rem;
+    padding: 1rem;
+}
+
+.key_item {
+    background-color: var(--skyblue);
+    border-radius: 1rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    background-color: var(---color2);
+    color: var(---color5);
+    cursor: pointer;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.delete {
+    width: 40%;
+}
+.key_item:active {
+    background-color: red;
+}
+.key_item:hover {
+    font-weight: 800;
+}
+.key_tiem_color1 {
+    background-color: var(---color3);
+}
+.key_tiem_color2 {
+    background-color: var(---color4);
+    grid-column-start: 6;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
 }

@@ -1,86 +1,18 @@
-body {
-    margin: 5rem 5rem;
-    display: block;
-    width: 250px;
-    height: 550px;
-    background-color: var(---color1);
-    box-shadow: 15px 15px 8px gray;
-    padding: 5px 5px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body {
+    font-size: 10px;
+    font-family: 'Roboto Mono', monospace;
 }
 
-.barra {
-    display: block;
-    font-size: 3rem;
-    text-align: end;
-    margin: 3rem 2rem;
-    color: var(---color1);
-    background-color: var(---color3);
-}
-
-.teclado {
-    width: 220px;
-    height: 280px;
-    display: grid;
-    margin: auto;
-    margin-top: 0.5rem;
-
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows:  1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 0.3rem;
-
-}
-
-.teclado > div {
-    color: white;
-  
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 0.5rem;
-    height: 3.3rem;
-    font-size: 1.5rem;
-}
-
-.teclado > .tecla {
-    background-color: var(---color5);
-}
-.tecla:hover {
-    background-color:  rgb(12, 10, 10);
-}
-
-.teclado > .tecla-funciones-especiales {
-    background-color: var(---color2);
-}
-.tecla-funciones-especiales:hover{
-    background-color: rgb(100, 98, 98);
-    cursor: pointer;
-}
-
-.teclado > .tecla-AC {
-    background-color: var(---color2);
-}
-.tecla-AC:hover{
-    background-color: rgb(100, 98, 98);
-    cursor: pointer;
-}
-
-
-.teclado > .teclasim {
-    background-color: var(---color4);
-}
-.teclasim:hover{
-    background-color: rgb(193, 130, 12);
-    cursor: pointer;
-}
-
-.teclado > .teclacero {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 5;
-    grid-row-end: 6;
-    background-color: red;
-}
-.teclacero:hover {
-    background-color: brown;
-    cursor: pointer;
+:root {
+    ---color: #1E2128;
+    ---color1 : #292C33;
+    ---color2: #34373D;
+    ---color3: #4B4D53;
+    ---color4: #E66100;
+    ---color5: #ffffff;
 }

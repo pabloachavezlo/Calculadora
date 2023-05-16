@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora</title>
+    <title>¤ Calculadora ¤</title>
 
     <!--Links css-->
     <link rel="stylesheet" href="./css/css.css">
@@ -18,36 +18,18 @@
 </head>
 <body>
 
-    <section>
-        <div class="barra">1 234,56</div>
-    </section>
-    <section>
-        <div class="teclado">
-            <div class="tecla-AC">AC</div>
-            <div class="tecla-funciones-especiales">+/-</div>
-            <div class="tecla-funciones-especiales">%</div>
-            <div class="teclasim">/</div>
-            <div class="tecla">7</div>
-            <div class="tecla">8</div>
-            <div class="tecla">9</div>
-            <div class="teclasim">X</div>
-            <div class="tecla">4</div>
-            <div class="tecla">5</div>
-            <div class="tecla">6</div>
-            <div class="teclasim">-</div>
-            <div class="tecla">1</div>
-            <div class="tecla">2</div>
-            <div class="tecla">3</div>
-            <div class="teclasim">+</div>
-            <div class="teclacero">0</div>
-            <div class="tecla">,</div>
-            <div class="teclasim">=</div>
+    <main id="root">
+        <div class="titulo">
+            <span>Calculadora</span>
         </div>
-    </section>
+        <ul class="recorrido"> </ul>
+        <input type="text" id="resultado-pantalla">
+        <div class="teclado"></div>
+    </main>
 
-
+ 
+    <script src="./js/data_teclas.js"></script>
+    <script src="./js/main_teclas.js"></script>
     <script src="./js/main.js"></script>
-    <script src="./js/all_teclas/main_teclas.js"></script>
-    <script src="./js/all_teclas/data_teclas.js"></script>
 </body>
 </html>
