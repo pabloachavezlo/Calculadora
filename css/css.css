@@ -5,14 +5,19 @@
 }
 html,body {
     font-size: 10px;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Quicksand', sans-serif;
+    height: 80rem;
+    width: 300px;
 }
 
 :root {
-    ---color: #1E2128;
-    ---color1 : #292C33;
-    ---color2: #34373D;
-    ---color3: #4B4D53;
+    ---color: #000000;
+    ---color1 :  blue;
+    ---color2: rgb(255, 0, 0);
+    ---color3:  rgb(3, 3, 61);
     ---color4: #E66100;
     ---color5: #ffffff;
+    ---color6:  rgb(0, 255, 26);
+    ---color7: rgb(5, 5, 97);
+    ---color8: brown;
 }

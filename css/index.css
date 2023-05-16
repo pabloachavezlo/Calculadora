@@ -1,30 +1,31 @@
 #root {
-    max-width: 36.5rem;
     margin: auto;
     background-color: var(---color);
-    border-radius: 10px;
-    
+
 }
+
 .titulo{
     width: 100%;
+    height: 5rem;
     padding: 0.1rem 1rem;
-    background-color: #16171D;
+    background-color: var(---color);
     color: var(---color5);
-    font-size: 1.5rem;
-    
-    display: flex;
-    align-items: center;
+    font-size: 3rem;
 }
 
 .titulo span {
     font-weight: 600;
+    position: relative;
+    
+    text-align: center;
+    display: block;
 }
 
 .recorrido {
     list-style: none;
     width: 100%;
-    height: 11.5rem;
-    background-color: var(---color2);
+    height: 15rem;
+    background-color: var(---color);
     padding: 1rem;
     color: var(---color5);
 
@@ -43,15 +44,17 @@
 
 }
 .equal-sign {
-    color: var(---color4);
-    justify-self: right;
+    color: var(---color1);
+    justify-self: center;
 
 }
+
 .resultado {
     font-weight: 500;
     justify-self: right;
 }
-#resultado-pantalla {
+
+.show-pantalla {
     display: flex;
     width: 100%;
     height: 6.5rem;
@@ -61,53 +64,56 @@
     outline: none;
     padding: 1rem;
 
-    background-color: var(---color1);
+    background-color: var(---color);
     color: var(---color5);
 }
 .teclado {
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(5,6.5rem);
-    grid-template-rows: repeat(5,4.5rem);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(5,7.5rem);
     gap: 0.4rem;
     padding: 1rem;
+
+    margin: auto;
 }
 
 .key_item {
     background-color: var(--skyblue);
     border-radius: 1rem;
+    justify-content: center;
     font-size: 1.8rem;
     font-weight: 600;
-    background-color: var(---color2);
+    background-color: var(---color4);
     color: var(---color5);
     cursor: pointer;
-
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-
     display: flex;
-    justify-content: center;
     align-items: center;
 }
+
 .delete {
-    width: 40%;
+    width: 20%;
 }
-.key_item:active {
-    background-color: red;
-}
+
+
+
+
 .key_item:hover {
     font-weight: 800;
+    background-color: blueviolet;
 }
-.key_tiem_color1 {
+.key_item_tipo1 {
     background-color: var(---color3);
 }
-.key_tiem_color2 {
-    background-color: var(---color4);
-    grid-column-start: 6;
-    grid-column-end: 4;
-    grid-row-start: 4;
-    grid-row-end: 5;
+.key_item_tipo1:hover {
+    background-color: var(---color7);
+}
+.key_item_0 {
+    background-color: var(---color2);
+
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.key_item_0:hover {
+    background-color: var(---color8);
 }

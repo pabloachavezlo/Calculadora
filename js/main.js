@@ -1,20 +1,22 @@
 llamar_teclas();
+// Función para asignar funciones a cada una de las teclas
 
-let resultado = document.querySelector("#resultado-pantalla");
+let resultado = document.querySelector(".show-pantalla");
+// Variable que muestra los resultados de lo ingresado en el teclado en la pantalla
 
 function añadir_tecla(){
     let valor = this.innerHTML;
-    resultado = document.querySelector("#resultado-pantalla");
+    resultado = document.querySelector(".show-pantalla");
     resultado.value = resultado.value + valor;
 }
 
 function reseteo(){
-    resultado = document.querySelector("#resultado-pantalla");
+    resultado = document.querySelector(".show-pantalla");
     resultado.value = "";
 }
 
-function resetear_todo(){
-    let resultado2 = document.querySelector("#resultado-pantalla");
+function resetear_historial(){
+    let resultado2 = document.querySelector(".show-pantalla");
     resultado2.value = "0";
     document.querySelector(".recorrido").innerHTML = "";
 }
@@ -25,28 +27,36 @@ function destruir_valor(){
 }
 
 function calcular(){
-    operation = document.querySelector("#resultado-pantalla");
+    operation = document.querySelector(".show-pantalla");
     let answer = eval(operation.value);
     set_record(operation.value,answer);
     operation.value = answer;
 }
 
+// Creamos diferentes funciones dependiendo de lo que querramos hacer con las diferentes
+// teclas en nuestro teclado.
 
 
-// Evento de todas las teclas
 let dom_tec = document.querySelectorAll(".key_item");
+
+// Ahora establecemos sus funciones en el dom y creamos métodos para llamarlas
+// o comunicarnos con ellas desde el DOM mediante condicionales.
 
 dom_tec.forEach((keys_content) => {
     let content = keys_content.innerHTML;
 
     if (content == "C") {
         keys_content.addEventListener("click", reseteo);
+
     } else if (content == "=") {
         keys_content.addEventListener("click", calcular);
+
     } else if (content == "AC") {
-        keys_content.addEventListener("click", resetear_todo);
+        keys_content.addEventListener("click", resetear_historial);
+
     } else if (content == '<div class="delete"> « </div>') {
         keys_content.addEventListener("click", destruir_valor);
+
     } else {
         keys_content.addEventListener("click", añadir_tecla);
     }
