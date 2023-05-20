@@ -16,8 +16,8 @@ function reseteo(){
 }
 
 function resetear_historial(){
-    let resultado2 = document.querySelector(".show-pantalla");
-    resultado2.value = "0";
+    let resultado_anterior = document.querySelector(".show-pantalla");
+    resultado_anterior.value = "";
     document.querySelector(".recorrido").innerHTML = "";
 }
 function destruir_valor(){
@@ -54,7 +54,7 @@ dom_tec.forEach((keys_content) => {
     } else if (content == "AC") {
         keys_content.addEventListener("click", resetear_historial);
 
-    } else if (content == '<div class="delete"> « </div>') {
+    } else if (content == '<div class="delete"> «« </div>') {
         keys_content.addEventListener("click", destruir_valor);
 
     } else {

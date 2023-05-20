@@ -1,0 +1,29 @@
+@media screen and (min-width: 319px) {
+    html, body {
+        display: flex;
+        justify-content: center;
+        width: 47.7vh;
+    }
+    
+    #root {
+        margin: 0;
+        background-color: var(---color);
+        width: 100%;
+        height: 66.9rem;
+    }
+}
+
+@media screen and (min-width: 321px) {
+    html, body {
+        display: flex;
+        justify-content: center;
+        width: 48.7vh;
+    }
+    
+    #root {
+        margin: 0;
+        background-color: var(---color);
+        width: 100%;
+        height: 66.9rem;
+    }
+}
